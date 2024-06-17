@@ -352,7 +352,7 @@ namespace RVO {
 			}
 
 			//line.point = velocity_ + 0.5f * u;
-			line.point = velocity_ + collision_responsiblity_ * u;
+			line.point = velocity_ + collision_responsibility_ * u;
 			orcaLines_.push_back(line);
 		}
 

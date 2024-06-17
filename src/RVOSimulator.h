@@ -125,13 +125,13 @@ namespace RVO {
 		 *                             Must be non-negative.
 		 * \param      velocity        The default initial two-dimensional linear
 		 *                             velocity of a new agent (optional).
-		 * \param 	   collisionResponsiblity The default value of the collision responsibility that
+		 * \param 	   collisionResponsibility The default value of the collision responsibility that
 		 * 									  an agent takes upon (optional, default: 1.0)
 		 */
 		RVOSimulator(float timeStep, float neighborDist, size_t maxNeighbors,
 					 float timeHorizon, float timeHorizonObst, float radius,
 					 float maxSpeed, const Vector2 &velocity = Vector2(),
-					 float collisionResponsiblity = 1.0f);
+					 float collisionResponsibility = 1.0f);
 
 		/**
 		 * \brief      Destroys this simulator instance.
@@ -482,7 +482,7 @@ namespace RVO {
 		 *                             Must be non-negative.
 		 * \param      velocity        The default initial two-dimensional linear
 		 *                             velocity of a new agent (optional).
-		 * \param 	   collisionResponsiblity The collision avoidance responsibility that an 
+		 * \param 	   collisionResponsibility The collision avoidance responsibility that an 
 		 * 									  agent takes upon (optional, default: 0.5)
 		 */
 		void setAgentDefaults(float neighborDist, size_t maxNeighbors,
